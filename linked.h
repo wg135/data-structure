@@ -173,7 +173,7 @@ void delet_list(LIST L){
   while(p != NULL){
     tmp = p->next;
     free(p);
-    p - tmp;
+    p = tmp;
   }
 }
 
