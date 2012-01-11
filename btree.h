@@ -90,6 +90,7 @@ BTREE init_tree(){
 
   return T; 
 }
+
 BTREE creat_tree(element_type *array, int total, BTREE T){  
  
   int i;
