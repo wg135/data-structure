@@ -22,12 +22,12 @@ int twond(int array[], int len){
   max = secondmax = array[0];
 
   for(i=1; i<len;i++){
-    if(max < array[i]){
+    if(max < array[i]){ //next element is greater than max
       secondmax = max;
       max = array[i];
     }
     else
-      if(secondmax < array[i])
+      if(secondmax < array[i]) // next element is smaller than max but greater than secondmax
         secondmax = array[i];
   }
   
