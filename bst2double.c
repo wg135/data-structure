@@ -1,3 +1,4 @@
+/* covert a binary search tree to double linked list*/
 #include <stdio.h>
 #include <stdlib.h>
 

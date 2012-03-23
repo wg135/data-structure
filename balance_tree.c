@@ -130,7 +130,7 @@ int check_balance(BTREE T){
   return ((maxheight - minheight) < 1); 
 }
 
-int min_height( BTREE T){
+int min_height(BTREE T){
 
   int height_l, height_r;
 

@@ -38,7 +38,7 @@ int string_anagram(char *str1, char *str2){
     str1++; 
   } 
   while(*str2 != '\0'){
-    check[(int)*str2]  -= 1;
+    check[(int)*str2] -= 1;
     str2++;
   } 
 
