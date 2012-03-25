@@ -136,7 +136,7 @@ TREE_NODE bt_insert(element_type element, BTREE T){
   return T;
 }
 
-BTREE find_tree(element_type element, BTREE T){
+BTREE find_tree(element_type element, BTREE T){ //find an element in the tree
 
   if( T == NULL)
     return NULL;
@@ -149,7 +149,7 @@ BTREE find_tree(element_type element, BTREE T){
     return T;
 }
 
-TREE_NODE find_min(BTREE T){
+TREE_NODE find_min(BTREE T){ //find min element in the tree
 
   if(T == NULL)
     return NULL;
@@ -160,7 +160,7 @@ TREE_NODE find_min(BTREE T){
       return(find_min(T->left));
 }
 
-TREE_NODE find_max(BTREE T){
+TREE_NODE find_max(BTREE T){ //find max element in the tree
 
   if( T != NULL)
     while(T->right != NULL)
@@ -480,6 +480,9 @@ QUEUE queue_init(){
 }
 
 void output_leaf_recursive(BTREE T){
+
+  if(T == NULL)
+    return;
 
   if(T != NULL){
     if((T->left == NULL)&&(T->right == NULL))

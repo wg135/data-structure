@@ -1,3 +1,5 @@
+/*store and get  min element of stack */
+
 #include <stdio.h>
 #include <stdlib.h>
 
