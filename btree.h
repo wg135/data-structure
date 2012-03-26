@@ -208,7 +208,7 @@ int height_recursive(BTREE T){
   int height_l, height_r;
   
   if(T ==NULL)
-    return -1;
+    return 0;
   height_l = height_recursive(T->left);
   height_r = height_recursive(T->right);
   if(height_l > height_r)
