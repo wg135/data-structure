@@ -5,7 +5,6 @@
 void recursivepermute(char *str, int k);
 void exchange(char *str, int p1, int p2);
 
-
 int main(int argc, char *argv[]){
   char a[] = "abc";
   recursivepermute(a,0);
