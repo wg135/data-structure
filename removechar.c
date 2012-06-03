@@ -8,7 +8,7 @@ char *remove1(char *str1, char *str2);
 
 int main(int argc, char *argv[]){
 
-  char str1[] = "test string";
+  char str1[] = "tessssssssssssssssssssssssssssssssssssssssssssssst string";
   char str2[] = "mask";
 
   printf("%s\n", remove1(str1, str2));
