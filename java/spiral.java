@@ -8,6 +8,10 @@ public class spiral{
     int k=0, l=0;
     int i;
 
+   /*
+    k: current row
+    l: current col
+   */
     while(k<m && l<n){
       for(i=l; i<n; i++)
         System.out.printf("%d ", a[k][i]);    
