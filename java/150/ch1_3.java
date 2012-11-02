@@ -32,7 +32,7 @@ public class ch1_3{
 
   public static void main(String[] args){
     
-    String str = "abcdeeeeeeeeeeeeeeeeeeeeeeeee";
+    String str = "abcdeeeeeeeeeeeeeeeeeeeeeeeeef";
     char[] str1 = str.toCharArray();
     str1 = del_dup(str1);
     System.out.println(str1);
