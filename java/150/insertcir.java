@@ -4,11 +4,11 @@ public class insertcir{
   
   public static void insertion(ListNode head, int value){
     ListNode tmp = head;
-    if(head == null){
+    if(head == null){  //first case: the list is empty
       head = new ListNode(value);
       head.next = head;
     } 
-   if(tmp.data >= value){
+   if(tmp.data >= value){ // second case: the node should be inserted in the first place
      while(tmp.next != head)
        tmp = tmp.next;
      tmp.next = new ListNode(value);
@@ -16,7 +16,7 @@ public class insertcir{
      tmp.next = head;
      head = tmp;
    }
-   else{
+   else{ //third case: the node in list 
      while(tmp.next != head && tmp.next.data < value)
        tmp = tmp.next;
      ListNode curr = new ListNode(value);

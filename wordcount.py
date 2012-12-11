@@ -2,7 +2,7 @@
 #
 #wordcount program for interview of Nopsec company
 #Author: Wei Gao
-#Date: Apr 30 2012
+#Date:  Nov 27 2012
 #Email: wg135@msstate.edu
 
 
