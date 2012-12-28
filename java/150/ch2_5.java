@@ -20,20 +20,20 @@ public class ch2_5{
       if(fast != null)
         fast = fast.next; 
     }
-    return true;
+    return false;
   }
 
   public static ListNode findstart(ListNode head){
      ListNode slow = head;
      ListNode fast = head;
    
-     while(fast != null){
+     while((fast != null)&&(fast.next != null)){
       slow = slow.next;
       fast = fast.next.next;
       if(fast == slow)
          break;
      } 
-     if(fast == null)
+     if((fast == null)||(fast.next == null))
        return null;
 
       slow = head;
