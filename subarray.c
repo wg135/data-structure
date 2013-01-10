@@ -27,7 +27,7 @@ int submax(int array[], int num){
       maxvalue = currentvalue;     
   }
   
-  if(maxvalue == 0){
+  if(maxvalue == 0){ //all elements are negative
     maxvalue = array[0];
     for(i=1; i<num; i++){
       if(maxvalue < array[i])

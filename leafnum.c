@@ -1,3 +1,5 @@
+// caluate the number of leaf in one tree
+
 #include <stdio.h>
 #include <stdlib.h>
 
