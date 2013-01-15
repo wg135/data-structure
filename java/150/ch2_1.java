@@ -12,18 +12,19 @@ public class ch2_1{
       map.put(p1.data, true);
       while(p2 != null){
        if(map.containsKey(p2.data)){
-         p1.next = p2.next; 
+         p1.next = p2.next;
+         p2 = p1.next; 
        }
        else{
          map.put(p2.data, true);
+         p1 = p1.next;
+         p2 = p2.next; 
        }
-       p1 = p1.next;
-       p2 = p2.next; 
       }
     } 
 
     public static void main(String[] args){
-      int array[] = {1, 2, 3, 4, 5, 6, 7, 7, 8, 9, 10};
+      int array[] = {1, 2, 3, 3, 4, 5, 6, 7, 7, 8, 9, 10};
       ListNode list = new ListNode(0);
       for(int data: array)
          list.addtoend(data);   

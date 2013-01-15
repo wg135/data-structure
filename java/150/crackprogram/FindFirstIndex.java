@@ -1,15 +1,14 @@
 public class FindFirstIndex{
 
   public static int findfirst(int[] a, int k){
-    if(a[0] > k)
-	return -1;
-    if(a[a.length-1] < k)
-	return -1;
-    else
 	return findfirst_util(a, 0, a.length-1, k);
   }
 
   public static int findfirst_util(int[] a, int start, int end, int k){
+    if(a[0] > k)
+	return -1;
+    if(a[a.length-1] < k)
+	return -1;
     if(a[start] == k)
 	return start;
     int middle = start + (end - start) / 2;
