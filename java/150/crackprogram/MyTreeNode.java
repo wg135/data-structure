@@ -85,6 +85,11 @@ public class MyTreeNode{
 	}
   }
 
-
+  public void post_order_stack(){
+	Stack<MyTreeNode> stack = new Stack<MyTreeNode>();
+	
+	MyTreeNode current = this;
+	
+  }
   
 }
