@@ -1,4 +1,4 @@
-
+//find duplicate element in a 32000 array for 4k byte memory
 public class find_dup_array{
 
   public void find(int[] array){
