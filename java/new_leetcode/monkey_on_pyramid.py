@@ -10,7 +10,7 @@
 
 def pyramid():
   file = open("pyramid.txt")
-  line_cnt = 1;
+  line_cnt = 1
   newlists = []
   while 1: #read number in each line to list of list
     line = file.readline().rstrip()
